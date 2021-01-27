@@ -1,0 +1,73 @@
+M used: 1000
+N used: 1500
+
+
+program ran on my AMD Ryzen 9 3900X 12-Core Processor that is in my desktop. with standard clock rate at 3.80GHz
+
+Scalability:
+This program is strong scalable, as the number of processors increases and the array size increases our efficiency remains at a near constant rate. It does not have fall off as our thread count reaches 8 and as the array size reaches 16000 so the system must be strongly scalable. The efficiencly remains near 1 the entire time for this system.
+
+
+Array size 1000, Thread Count: 1, --> elapsed time for sum = 8.463860e-03 seconds
+Array size 2000, Thread Count: 1, --> elapsed time for sum = 1.646996e-02 seconds
+Array size 4000, Thread Count: 1, --> elapsed time for sum = 3.299713e-02 seconds
+Array size 8000, Thread Count: 1, --> elapsed time for sum = 6.527901e-02 seconds
+Array size 16000, Thread Count: 1, --> elapsed time for sum = 1.314819e-01 seconds
+
+
+
+Array size 1000, Thread Count: 2, --> elapsed time for sum = 4.414082e-03 seconds
+Array size 2000, Thread Count: 2, --> elapsed time for sum = 8.383036e-03 seconds
+Array size 4000, Thread Count: 2, --> elapsed time for sum = 1.669407e-02 seconds
+Array size 8000, Thread Count: 2, --> elapsed time for sum = 3.297496e-02 seconds
+Array size 16000, Thread Count: 2, --> elapsed time for sum = 6.637692e-02 seconds
+
+
+
+Array size 1000, Thread Count: 4, --> elapsed time for sum = 2.569199e-03 seconds
+Array size 2000, Thread Count: 4, --> elapsed time for sum = 4.399061e-03 seconds
+Array size 4000, Thread Count: 4, --> elapsed time for sum = 8.450985e-03 seconds
+Array size 8000, Thread Count: 4, --> elapsed time for sum = 1.695395e-02 seconds
+Array size 16000, Thread Count: 4, --> elapsed time for sum = 3.372097e-02 seconds
+
+
+
+Array size 1000, Thread Count: 8, --> elapsed time for sum = 2.065897e-03 seconds
+Array size 2000, Thread Count: 8, --> elapsed time for sum = 2.147913e-03 seconds
+Array size 4000, Thread Count: 8, --> elapsed time for sum = 4.168987e-03 seconds
+Array size 8000, Thread Count: 8, --> elapsed time for sum = 9.645939e-03 seconds
+Array size 16000, Thread Count: 8, --> elapsed time for sum = 1.800895e-02 seconds
+
+
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	1.917   |	1.964   |	1.976    |	1.979	|	1.981	|
+-------	|---------------------------------------------------------------------
+4		|	3.294   |	3.744   |	3.904   |	3.850	|	3.899	|
+-------	|----------------------------------------------------------------------
+8		|	4.096   |	7.667   |	7.914   |	6.767	|	7.300	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.9587  |	0.9823  |	0.9882  |	0.9898	|	0.9904	|
+-------	|--------------------------------------------------------------------
+4		|	0.8235  |	0.9359   |	0.9761   |	0.9625	|	0.9747	|
+-------	|--------------------------------------------------------------------
+8		|	0.5121  |	0.9584   |	0.9893   |	0.8459 |   0.9126	|	
+-----------------------------------------------------------------------------

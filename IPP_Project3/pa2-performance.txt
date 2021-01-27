@@ -1,0 +1,72 @@
+M used: 1000
+N used: 1500
+
+program ran on my AMD Ryzen 9 3900X 12-Core Processor that is in my desktop. with standard clock rate at 3.80GHz
+
+Scalability:
+This program is weakly scalable, as the number of processors increases and the array size increases our efficiency increasses at a non constant rate. It has fall off as our thread count reaches 8 and as the array size reaches 16000 so the system can not be strongly scalable.
+
+
+
+
+Time elapsed on: Array Size 1000, thread count 1 is: 5.004883e-03
+Time elapsed on: Array Size 2000, thread count 1 is: 9.615183e-03
+Time elapsed on: Array Size 4000, thread count 1 is: 1.907301e-02
+Time elapsed on: Array Size 8000, thread count 1 is: 3.821111e-02
+Time elapsed on: Array Size 16000, thread count 1 is: 7.723308e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 2 is: 2.593994e-03
+Time elapsed on: Array Size 2000, thread count 2 is: 4.891872e-03
+Time elapsed on: Array Size 4000, thread count 2 is: 9.658813e-03
+Time elapsed on: Array Size 8000, thread count 2 is: 1.927304e-02
+Time elapsed on: Array Size 16000, thread count 2 is: 3.819585e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 4 is: 1.545191e-03
+Time elapsed on: Array Size 2000, thread count 4 is: 2.612114e-03
+Time elapsed on: Array Size 4000, thread count 4 is: 5.223989e-03
+Time elapsed on: Array Size 8000, thread count 4 is: 9.855032e-03
+Time elapsed on: Array Size 16000, thread count 4 is: 2.724814e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 8 is: 1.204014e-03
+Time elapsed on: Array Size 2000, thread count 8 is: 1.708031e-03
+Time elapsed on: Array Size 4000, thread count 8 is: 3.554821e-03
+Time elapsed on: Array Size 8000, thread count 8 is: 5.506039e-03
+Time elapsed on: Array Size 16000, thread count 8 is: 1.426911e-02
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	1.93   |	1.97    |	1.97    |	1.98	|	2.02	|
+-------	|---------------------------------------------------------------------
+4		|	3.24   |	3.68   |	3.65   |	3.88	|	2.83	|
+-------	|----------------------------------------------------------------------
+8		|	4.16   |	5.63   |	5.37   |	6.94	|	5.41	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.964  |	0.9827  |	0.9987  |	0.991	|	1.011	|
+-------	|---------------------------------------------------------------------
+4		|	0.8097 |	0.9202   |	0.9127   |	0.9693	|	0.708	|
+-------	|----------------------------------------------------------------------
+8		|	0.5196  |	0.7036   |	0.6706   |	0.86748 |   0.6765	|	
+-----------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+Games of 5 or more turns: 19716
+With Game Count of 19716 and Thread Count of 1 and atleast 5 turns played. The average white player raiting was: 1599.03 and it took 2.140999e-04 seconds to complete. 
+With Array Size: 19716 and thread count 1 and atleast 5 turns. NonZero time count is 11271 and max among those is 6.058447e+08 milliseconds. 
+ This Process took 1.950264e-04 seconds.
+
+
+Games of 10 or more turns: 19441
+With Game Count of 19441 and Thread Count of 1 and atleast 10 turns played. The average white player raiting was: 1600.823929 and it took 1.659393e-04 seconds to complete. 
+With Array Size: 19441 and thread count 1 and atleast 10 turns. NonZero time count is 11141 and max among those is 6.058447e+08 milliseconds. 
+ This Process took 1.420975e-04 seconds.
+
+
+Games of 20 or more turns: 18397
+With Game Count of 18397 and Thread Count of 1 and atleast 20 turns played. The average white player raiting was: 1606.654726 and it took 1.537800e-04 seconds to complete. 
+With Array Size: 18397 and thread count 1 and atleast 20 turns. NonZero time count is 10579 and max among those is 6.058447e+08 milliseconds. 
+ This Process took 1.320839e-04 seconds.
+
+
+Games of 40 or more turns: 14383
+With Game Count of 14383 and Thread Count of 1 and atleast 40 turns played. The average white player raiting was: 1616.188625 and it took 1.270771e-04 seconds to complete. 
+With Array Size: 14383 and thread count 1 and atleast 40 turns. NonZero time count is 8442 and max among those is 9.000000e+07 milliseconds. 
+ This Process took 1.239777e-04 seconds.
+
+
+Games of 80 or more turns: 4900
+With Game Count of 4900 and Thread Count of 1 and atleast 80 turns played. The average white player raiting was: 1635.872449 and it took 8.392334e-05 seconds to complete. 
+With Array Size: 4900 and thread count 1 and atleast 80 turns. NonZero time count is 2998 and max among those is 1.035103e+07 milliseconds. 
+ This Process took 9.703636e-05 seconds.
+
+
+
+Scalability:
+
+Neither program is scalable.
