@@ -1,0 +1,432 @@
+M used: 1
+N used: 1
+
+Tim Inzitari
+
+program ran on my AMD Ryzen 9 3900X 12-Core Processor that is in my desktop. with standard clock rate at 3.80GHz
+
+Scalability:
+This program is weakly scalable, as the number of processors increases and the array size increases our efficiency increasses at a non constant rate. It has fall off as our thread count reaches 8 and as the array size reaches 16000 so the system can not be strongly scalable.
+
+
+
+
+Time elapsed on: Array Size 1000, thread count 1 is: 5.004883e-03
+Time elapsed on: Array Size 2000, thread count 1 is: 9.615183e-03
+Time elapsed on: Array Size 4000, thread count 1 is: 1.907301e-02
+Time elapsed on: Array Size 8000, thread count 1 is: 3.821111e-02
+Time elapsed on: Array Size 16000, thread count 1 is: 7.723308e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 2 is: 2.593994e-03
+Time elapsed on: Array Size 2000, thread count 2 is: 4.891872e-03
+Time elapsed on: Array Size 4000, thread count 2 is: 9.658813e-03
+Time elapsed on: Array Size 8000, thread count 2 is: 1.927304e-02
+Time elapsed on: Array Size 16000, thread count 2 is: 3.819585e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 4 is: 1.545191e-03
+Time elapsed on: Array Size 2000, thread count 4 is: 2.612114e-03
+Time elapsed on: Array Size 4000, thread count 4 is: 5.223989e-03
+Time elapsed on: Array Size 8000, thread count 4 is: 9.855032e-03
+Time elapsed on: Array Size 16000, thread count 4 is: 2.724814e-02
+
+
+
+Time elapsed on: Array Size 1000, thread count 8 is: 1.204014e-03
+Time elapsed on: Array Size 2000, thread count 8 is: 1.708031e-03
+Time elapsed on: Array Size 4000, thread count 8 is: 3.554821e-03
+Time elapsed on: Array Size 8000, thread count 8 is: 5.506039e-03
+Time elapsed on: Array Size 16000, thread count 8 is: 1.426911e-02
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	1.93   |	1.97    |	1.97    |	1.98	|	2.02	|
+-------	|---------------------------------------------------------------------
+4		|	3.24   |	3.68   |	3.65   |	3.88	|	2.83	|
+-------	|----------------------------------------------------------------------
+8		|	4.16   |	5.63   |	5.37   |	6.94	|	5.41	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.964  |	0.9827  |	0.9987  |	0.991	|	1.011	|
+-------	|---------------------------------------------------------------------
+4		|	0.8097 |	0.9202   |	0.9127   |	0.9693	|	0.708	|
+-------	|----------------------------------------------------------------------
+8		|	0.5196  |	0.7036   |	0.6706   |	0.86748 |   0.6765	|	
+-----------------------------------------------------------------------------
+program ran on my AMD Ryzen 9 3900X 12-Core Processor that is in my desktop. with standard clock rate at 3.80GHz
+
+
+
+NOTHING:
+
+Scalability:
+This program is not scalable for the global sum feature. Efficiency and Speedup are far below zero in most cases.
+
+
+Array size 1000, Thread Count: 1, Mode: Nothing --> elapsed time for sum = 7.390976e-05 seconds
+Array size 2000, Thread Count: 1, Mode: Nothing --> elapsed time for sum = 6.699562e-05 seconds
+Array size 4000, Thread Count: 1, Mode: Nothing --> elapsed time for sum = 7.486343e-05 seconds
+Array size 8000, Thread Count: 1, Mode: Nothing --> elapsed time for sum = 9.298325e-05 seconds
+Array size 16000, Thread Count: 1, Mode: Nothing --> elapsed time for sum = 1.268387e-04 seconds
+
+
+
+Array size 1000, Thread Count: 2, Mode: Nothing --> elapsed time for sum = 8.296967e-05 seconds
+Array size 2000, Thread Count: 2, Mode: Nothing --> elapsed time for sum = 7.915497e-05 seconds
+Array size 4000, Thread Count: 2, Mode: Nothing --> elapsed time for sum = 8.821487e-05 seconds
+Array size 8000, Thread Count: 2, Mode: Nothing --> elapsed time for sum = 9.202957e-05 seconds
+Array size 16000, Thread Count: 2, Mode: Nothing --> elapsed time for sum = 1.089573e-04 seconds
+
+
+
+Array size 1000, Thread Count: 4, Mode: Nothing --> elapsed time for sum = 1.070499e-04 seconds
+Array size 2000, Thread Count: 4, Mode: Nothing --> elapsed time for sum = 1.149178e-04 seconds
+Array size 4000, Thread Count: 4, Mode: Nothing --> elapsed time for sum = 1.101494e-04 seconds
+Array size 8000, Thread Count: 4, Mode: Nothing --> elapsed time for sum = 1.180172e-04 seconds
+Array size 16000, Thread Count: 4, Mode: Nothing --> elapsed time for sum = 1.161098e-04 seconds
+
+
+
+Array size 1000, Thread Count: 8, Mode: Nothing --> elapsed time for sum = 2.729893e-04 seconds
+Array size 2000, Thread Count: 8, Mode: Nothing --> elapsed time for sum = 2.689362e-04 seconds
+Array size 4000, Thread Count: 8, Mode: Nothing --> elapsed time for sum = 2.679825e-04 seconds
+Array size 8000, Thread Count: 8, Mode: Nothing --> elapsed time for sum = 2.357960e-04 seconds
+Array size 16000, Thread Count: 8, Mode: Nothing --> elapsed time for sum = 2.119541e-04 seconds
+
+
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|   0.61465 |	0.8821  |	0.9382  |	2.2301	|	1.2382	|
+-------	|---------------------------------------------------------------------
+4		|	0.40803 |	0.59442 |	0.73165 |	1.7028	|	1.1488	|
+-------	|----------------------------------------------------------------------
+8		|	0.17170 |	0.24192 |	0.2818  |	0.4692	|	0.46337	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.30732 |	0.44108 |	0.46912 |  1.11506	|	0.6191	|
+-------	|---------------------------------------------------------------------
+4		|	0.10201 |	0.14861 |	0.18291 |	0.4257	|	0.2872	|
+-------	|----------------------------------------------------------------------
+8		|	0.02146 |	0.03024 |	0.03523 |	0.05865 |   0.05792	|	
+-----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+BUSY WAITING:
+
+Scalability:
+This program is not scalable for the global sum feature. Efficiency and Speedup are far below zero in most cases.
+
+Array size 1000, Thread Count: 1, Mode: Busy Waiting --> elapsed time for sum = 5.984306e-05 seconds
+Array size 2000, Thread Count: 1, Mode: Busy Waiting --> elapsed time for sum = 6.008148e-05 seconds
+Array size 4000, Thread Count: 1, Mode: Busy Waiting --> elapsed time for sum = 6.294250e-05 seconds
+Array size 8000, Thread Count: 1, Mode: Busy Waiting --> elapsed time for sum = 1.051426e-04 seconds
+Array size 16000, Thread Count: 1, Mode: Busy Waiting --> elapsed time for sum = 1.080036e-04 seconds
+
+
+
+Array size 1000, Thread Count: 2, Mode: Busy Waiting --> elapsed time for sum = 7.796288e-05 seconds
+Array size 2000, Thread Count: 2, Mode: Busy Waiting --> elapsed time for sum = 6.103516e-05 seconds
+Array size 4000, Thread Count: 2, Mode: Busy Waiting --> elapsed time for sum = 9.202957e-05 seconds
+Array size 8000, Thread Count: 2, Mode: Busy Waiting --> elapsed time for sum = 9.202957e-05 seconds
+Array size 16000, Thread Count: 2, Mode: Busy Waiting --> elapsed time for sum = 8.511543e-05 seconds
+
+
+
+Array size 1000, Thread Count: 4, Mode: Busy Waiting --> elapsed time for sum = 1.080036e-04 seconds
+Array size 2000, Thread Count: 4, Mode: Busy Waiting --> elapsed time for sum = 1.130104e-04 seconds
+Array size 4000, Thread Count: 4, Mode: Busy Waiting --> elapsed time for sum = 1.080036e-04 seconds
+Array size 8000, Thread Count: 4, Mode: Busy Waiting --> elapsed time for sum = 1.180172e-04 seconds
+Array size 16000, Thread Count: 4, Mode: Busy Waiting --> elapsed time for sum = 1.130104e-04 seconds
+
+
+
+Array size 1000, Thread Count: 8, Mode: Busy Waiting --> elapsed time for sum = 2.589226e-04 seconds
+Array size 2000, Thread Count: 8, Mode: Busy Waiting --> elapsed time for sum = 2.739429e-04 seconds
+Array size 4000, Thread Count: 8, Mode: Busy Waiting --> elapsed time for sum = 2.729893e-04 seconds
+Array size 8000, Thread Count: 8, Mode: Busy Waiting --> elapsed time for sum = 2.610683e-04 seconds
+Array size 16000, Thread Count: 8, Mode: Busy Waiting --> elapsed time for sum = 2.770424e-04 seconds
+
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.83486 |	0.71865 |	0.81711 |	0.97727	|	1.41092	|
+-------	|---------------------------------------------------------------------
+4		|	0.5871  |	0.38399 |	0.36884 |	0.63119	|	0.97614	|
+-------	|----------------------------------------------------------------------
+8		|	0.24095 |	0.20982 |	0.24732 |	0.24414	|	0.4606	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.41743 |	0.35933 |	0.40855 |	0.48864	|	0.70546	|
+-------	|---------------------------------------------------------------------
+4		|	0.14677 |	0.096   |	0.09221 |	0.1578	|	0.24404	|
+-------	|----------------------------------------------------------------------
+8		|	0.03012  |	0.02623 |	0.03092 |	0.03052 |   0.05758	|	
+-----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+MUTEX:
+
+Scalability:
+This program is not scalable for the global sum feature. Efficiency and Speedup are far below zero in most cases.
+
+Array size 1000, Thread Count: 1, Mode: Mutex --> elapsed time for sum = 6.008148e-05 seconds
+Array size 2000, Thread Count: 1, Mode: Mutex --> elapsed time for sum = 5.912781e-05 seconds
+Array size 4000, Thread Count: 1, Mode: Mutex --> elapsed time for sum = 6.914139e-05 seconds
+Array size 8000, Thread Count: 1, Mode: Mutex --> elapsed time for sum = 8.702278e-05 seconds
+Array size 16000, Thread Count: 1, Mode: Mutex --> elapsed time for sum = 1.170635e-04 seconds
+
+
+
+Array size 1000, Thread Count: 2, Mode: Mutex --> elapsed time for sum = 8.893013e-05 seconds
+Array size 2000, Thread Count: 2, Mode: Mutex --> elapsed time for sum = 7.605553e-05 seconds
+Array size 4000, Thread Count: 2, Mode: Mutex --> elapsed time for sum = 8.893013e-05 seconds
+Array size 8000, Thread Count: 2, Mode: Mutex --> elapsed time for sum = 8.893013e-05 seconds
+Array size 16000, Thread Count: 2, Mode: Mutex --> elapsed time for sum = 1.008511e-04 seconds
+
+
+
+Array size 1000, Thread Count: 4, Mode: Mutex --> elapsed time for sum = 1.118183e-04 seconds
+Array size 2000, Thread Count: 4, Mode: Mutex --> elapsed time for sum = 1.180172e-04 seconds
+Array size 4000, Thread Count: 4, Mode: Mutex --> elapsed time for sum = 1.142025e-04 seconds
+Array size 8000, Thread Count: 4, Mode: Mutex --> elapsed time for sum = 1.199245e-04 seconds
+Array size 16000, Thread Count: 4, Mode: Mutex --> elapsed time for sum = 1.180172e-04 seconds
+
+
+
+Array size 1000, Thread Count: 8, Mode: Mutex --> elapsed time for sum = 3.509521e-04 seconds
+Array size 2000, Thread Count: 8, Mode: Mutex --> elapsed time for sum = 3.278255e-04 seconds
+Array size 4000, Thread Count: 8, Mode: Mutex --> elapsed time for sum = 2.751350e-04 seconds
+Array size 8000, Thread Count: 8, Mode: Mutex --> elapsed time for sum = 2.391338e-04 seconds
+Array size 16000, Thread Count: 8, Mode: Mutex --> elapsed time for sum = 2.510548e-04 seconds
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.87798 |	0.6875  |	0.72118 |	0.86294	|	1.0523	|
+-------	|---------------------------------------------------------------------
+4		|	0.74382 |	0.42077 |	0.60449 |	0.7234	|	1.01616	|
+-------	|----------------------------------------------------------------------
+8		|	0.28584 |	0.20625 |	0.26502 |	0.34659	|	0.44592	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.43899 |	0.34375 |	0.36059 |	0.43147	|	0.52615	|
+-------	|--------------------------------------------------------------------
+4		|	0.18596 |	0.10519 |	0.15112 |	0.18085	|	0.25404	|
+-------	|----------------------------------------------------------------------
+8		|	0.03573 |	0.02578 |	0.03313 |	0.04332 |   0.05574	|	
+-----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+SEMAPHORE:
+
+Scalability:
+This program is not scalable for the global sum feature. Efficiency and Speedup are far below zero in most cases.
+
+
+Array size 1000, Thread Count: 1, Mode: Semaphore --> elapsed time for sum = 5.912781e-05 seconds
+Array size 2000, Thread Count: 1, Mode: Semaphore --> elapsed time for sum = 5.602837e-05 seconds
+Array size 4000, Thread Count: 1, Mode: Semaphore --> elapsed time for sum = 6.604195e-05 seconds
+Array size 8000, Thread Count: 1, Mode: Semaphore --> elapsed time for sum = 8.320808e-05 seconds
+Array size 16000, Thread Count: 1, Mode: Semaphore --> elapsed time for sum = 1.208782e-04 seconds
+
+
+
+Array size 1000, Thread Count: 2, Mode: Semaphore --> elapsed time for sum = 7.510185e-05 seconds
+Array size 2000, Thread Count: 2, Mode: Semaphore --> elapsed time for sum = 7.700920e-05 seconds
+Array size 4000, Thread Count: 2, Mode: Semaphore --> elapsed time for sum = 7.486343e-05 seconds
+Array size 8000, Thread Count: 2, Mode: Semaphore --> elapsed time for sum = 6.508827e-05 seconds
+Array size 16000, Thread Count: 2, Mode: Semaphore --> elapsed time for sum = 1.018047e-04 seconds
+
+
+
+Array size 1000, Thread Count: 4, Mode: Semaphore --> elapsed time for sum = 1.068115e-04 seconds
+Array size 2000, Thread Count: 4, Mode: Semaphore --> elapsed time for sum = 1.130104e-04 seconds
+Array size 4000, Thread Count: 4, Mode: Semaphore --> elapsed time for sum = 1.142025e-04 seconds
+Array size 8000, Thread Count: 4, Mode: Semaphore --> elapsed time for sum = 1.199245e-04 seconds
+Array size 16000, Thread Count: 4, Mode: Semaphore --> elapsed time for sum = 1.201630e-04 seconds
+
+
+
+Array size 1000, Thread Count: 8, Mode: Semaphore --> elapsed time for sum = 2.779961e-04 seconds
+Array size 2000, Thread Count: 8, Mode: Semaphore --> elapsed time for sum = 2.939701e-04 seconds
+Array size 4000, Thread Count: 8, Mode: Semaphore --> elapsed time for sum = 3.099442e-04 seconds
+Array size 8000, Thread Count: 8, Mode: Semaphore --> elapsed time for sum = 2.620220e-04 seconds
+Array size 16000, Thread Count: 8, Mode: Semaphore --> elapsed time for sum = 2.670288e-04 seconds
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	07983   |	0.6911  |	2.82584 |	0.79648	|	1.2962	|
+-------	|---------------------------------------------------------------------
+4		|	0.65046 |	0.55696 |	2.08714 |	0.53623	|	0.85906	|
+-------	|----------------------------------------------------------------------
+8		|	0.25    |	0.23571 |	0.50604 |	0.37443	|	0.50049	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.39915 |	0.34555 |	1.41292 |	0.39824	|	0.6481	|
+-------	|---------------------------------------------------------------------
+4		|	0.16262 |	0.13924 |	0.52178 |	0.13406	|	0.21477	|
+-------	|----------------------------------------------------------------------
+8		|	0.03125 |	0.02946 |	0.06325 |	0.0468  |   0.06256	|	
+-----------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+WRITE LOCK:
+
+Scalability:
+This program is not scalable for the global sum feature. Efficiency and Speedup are far below zero in most cases.
+
+Array size 1000, Thread Count: 1, Mode: WriteLock --> elapsed time for sum = 5.793571e-05 seconds
+Array size 2000, Thread Count: 1, Mode: WriteLock --> elapsed time for sum = 5.698204e-05 seconds
+Array size 4000, Thread Count: 1, Mode: WriteLock --> elapsed time for sum = 6.198883e-05 seconds
+Array size 8000, Thread Count: 1, Mode: WriteLock --> elapsed time for sum = 8.201599e-05 seconds
+Array size 16000, Thread Count: 1, Mode: WriteLock --> elapsed time for sum = 1.249313e-04 seconds
+
+
+
+Array size 1000, Thread Count: 2, Mode: WriteLock --> elapsed time for sum = 7.510185e-05 seconds
+Array size 2000, Thread Count: 2, Mode: WriteLock --> elapsed time for sum = 1.218319e-04 seconds
+Array size 4000, Thread Count: 2, Mode: WriteLock --> elapsed time for sum = 7.700920e-05 seconds
+Array size 8000, Thread Count: 2, Mode: WriteLock --> elapsed time for sum = 6.508827e-05 seconds
+Array size 16000, Thread Count: 2, Mode: WriteLock --> elapsed time for sum = 8.201599e-05 seconds
+
+
+
+Array size 1000, Thread Count: 4, Mode: WriteLock --> elapsed time for sum = 1.080036e-04 seconds
+Array size 2000, Thread Count: 4, Mode: WriteLock --> elapsed time for sum = 1.099110e-04 seconds
+Array size 4000, Thread Count: 4, Mode: WriteLock --> elapsed time for sum = 1.111031e-04 seconds
+Array size 8000, Thread Count: 4, Mode: WriteLock --> elapsed time for sum = 1.130104e-04 seconds
+Array size 16000, Thread Count: 4, Mode: WriteLock --> elapsed time for sum = 1.640320e-04 seconds
+
+
+
+Array size 1000, Thread Count: 8, Mode: WriteLock --> elapsed time for sum = 2.591610e-04 seconds
+Array size 2000, Thread Count: 8, Mode: WriteLock --> elapsed time for sum = 2.748966e-04 seconds
+Array size 4000, Thread Count: 8, Mode: WriteLock --> elapsed time for sum = 2.729893e-04 seconds
+Array size 8000, Thread Count: 8, Mode: WriteLock --> elapsed time for sum = 2.610683e-04 seconds
+Array size 16000, Thread Count: 8, Mode: WriteLock --> elapsed time for sum = 2.188683e-04 seconds
+
+Speedup Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.65079 |	1.09123 |	0.74603 |	0.90127	|	1.79832	|
+-------	|---------------------------------------------------------------------
+4		|	0.49878 |	0.70682 |	0.38399 |	0.71343	|	1.31828	|
+-------	|----------------------------------------------------------------------
+8		|	0.18238 |	0.27669 |	0.20154 |	0.36438	|	0.45989	|	
+-----------------------------------------------------------------------------
+
+
+
+Efficiency Table
+								Array Size
+		---------------------------------------------------------------
+thread  |
+count   |  	1000	|	2000	|	4000	|	8000	|	16000	|
+--------------------------------------------------------------------------
+1	    |	1.0		|	1.0		|	1.0		|	1.0		|	1.0		|
+------- |-------------------------------------------------------------------
+2		|	0.3254  |	0.54561 |	0.37302 |	0.45063	|	0.89916	|
+-------	|---------------------------------------------------------------------
+4		|	0.1247 |	0.1767  |	0.096   |	0.17836	|	0.32957	|
+-------	|----------------------------------------------------------------------
+8		|	0.0228  |	0.03459 |	0.02519 |	0.04555 |   0.05749	|	
+-----------------------------------------------------------------------------
+
